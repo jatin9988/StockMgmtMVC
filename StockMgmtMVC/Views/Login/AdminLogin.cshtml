@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "AdminLogin";
+    Layout = "~/Layout.cshtml";
+}
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href='@Url.Action("AdminLogin","Login")'>Stock Management</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href='@Url.Action("Home","Main")'>Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='@Url.Action("AboutUs","Main")'>About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("ContactUs","Main")">Contact</a>
+            </li>
+
+        </ul>
+
+    </div>
+</nav>
+
+<section class="ab-info-main py-md-5 py-4">
+    <div class="container py-md-5 py-4">
+        <h3 class="tittle text-center mb-lg-5 mb-3"><span class="sub-tittle">Find Us</span>Admin Login </h3>
+        <div class="row contact-main-info">
+            <div class="col-md-7 contact-right">
+                <form action="Validate" method="post">
+                    <input id="AdminUserName" name="SName" type="text" class="email" placeholder="Email" required="" />
+
+                    <input id="AdminPassword" name="SPassword" class="email" type="text" placeholder="Password" required="" />
+
+                    <div class="read mt-3">
+                        <input id="submit" name="submit" type="submit" value="SignIn" class="btn submit" />
+
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <br />
+        <a href='@Url.Action("Home","Main")' class="btn btn-danger">Back  to Index </a>
+    </div>
+</section>

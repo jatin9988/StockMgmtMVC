@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "ContactUs";
+    Layout = "~/Layout.cshtml";
+}
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href='@Url.Action("AdminLogin","Login")'>Stock Management</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href='@Url.Action("Home","Main")'>Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='@Url.Action("AboutUs","Main")'>About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("ContactUs","Main")">Contact</a>
+            </li>
+
+        </ul>
+
+    </div>
+</nav>
+
+
+
+
+<h2 class="text-center">Welcome to Stock Management NZ</h2><br />
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>General Feedback Numbers</h1>
+            <h3>+64 20 500 654 905</h3>
+            <h3>+64 63 565 656 654</h3>
+            <p>you can contact to these these numbers for general regarding feedback</p>
+        </div>
+        <div class="col-md-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d817202.3861024495!2d174.30502620606845!3d-36.86170744554708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47fb5a9ce6fb%3A0x500ef6143a29917!2sAuckland%2C+New+Zealand!5e0!3m2!1sen!2sin!4v1556264387902!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<br />
+<a href='@Url.Action("Home","Main")' class="btn btn-danger">Back  to Index </a>
+

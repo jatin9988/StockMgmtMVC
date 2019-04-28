@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewBag.Title = "AdminZonal";
+    Layout = "~/Layout.cshtml";
+}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href='@Url.Action("AdminLogin","Login")'>Stock Management</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href='@Url.Action("Home","Main")'>Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='@Url.Action("AboutUs","Main")'>About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("ContactUs","Main")">Contact</a>
+            </li>
+
+        </ul>
+
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Stock </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href='@Url.Action("AdminLogin","Login")'>Admin <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+            </li>
+
+
+        </ul>
+
+    </div>
+</nav>
+
+
+
+
+
+
+<h2 class="text-center">AdminZonal</h2>
+
+<h1 class="text-center"> <a href='@Url.Action("Product","Product")'>Purchase</a> </h1>
+<h1 class="text-center"><a href='@Url.Action("sale","sale")'>Sale</a></h1>
+
+
+<a href='@Url.Action("AdminLogin","Login")' class="btn btn-danger">Back to Login Page</a>

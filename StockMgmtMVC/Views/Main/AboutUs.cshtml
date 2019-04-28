@@ -1,0 +1,58 @@
+﻿
+@{
+                /**/
+
+                ViewBag.Title = "AboutUs";
+                Layout = "~/Layout.cshtml";
+}
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href='@Url.Action("AdminLogin","Login")'>Stock Management</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href='@Url.Action("Home","Main")'>Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='@Url.Action("AboutUs","Main")'>About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("ContactUs","Main")">Contact</a>
+            </li>
+
+        </ul>
+
+    </div>
+</nav>
+
+<h2 class="text-center">About  Stock Management NZ</h2><br />
+<center>
+    <img src="~/images/indexphoto.jpg" style="border:0px solid red;height:200px;width:1000px;align-self:center;" />
+    
+</center>
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-6">
+            <h2> Managing Inventory</h2>
+            <p>
+                Enjoy real-time stock visibility and maximise control. Understand your product margins and make better decisions based on real-time, accurate profit reporting.
+            </p>
+            <h2>
+                Instant data integration with our platform partners.<h2>
+                    <p>
+                        As a cloud-based platform, Unleashed software creates an enterprise-level business management solution to streamline your business.
+                        Synchronizing your data to the best-of-breed applications you need to run your business.
+                    </p>
+        </div>
+    </div>
+    <a href='@Url.Action("Home","Main")' class="btn btn-danger">Back  to Index </a>
+</div>
+<br/>
