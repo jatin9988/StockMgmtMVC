@@ -34,7 +34,7 @@ namespace StockMgmtMVC.Controllers
         public ActionResult Create([Bind(Exclude = "id")] sale saleID)
         {
             if (!ModelState.IsValid)
-                return View();0
+                return View();
             conn.sales.Add(saleID);
             conn.SaveChanges();
             return RedirectToAction("Sale");
